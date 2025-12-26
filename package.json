@@ -1,0 +1,106 @@
+{
+  "name": "html-css-tamil",
+  "displayName": "HTML/CSS Tamil",
+  "description": "The full-featured HTML & CSS programming language for Tamil speakers.",
+  "version": "1.0.1",
+  "publisher": "Mehanth",
+  "icon": "images/extension_icon.png",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "keywords": [
+    "tamil",
+    "html",
+    "css",
+    "thtml",
+    "tcss",
+    "web development",
+    "compiler",
+    "india"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Education"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Start-Up-TN-Hackathon/Tamil-HTML"
+  },
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "thtml",
+        "aliases": [
+          "Tamil HTML",
+          "thtml"
+        ],
+        "extensions": [
+          ".thtml"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "tcss",
+        "aliases": [
+          "Tamil CSS",
+          "tcss"
+        ],
+        "extensions": [
+          ".tcss"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "thtml",
+        "scopeName": "source.thtml",
+        "path": "./syntaxes/thtml.tmLanguage.json"
+      },
+      {
+        "language": "tcss",
+        "scopeName": "source.tcss",
+        "path": "./syntaxes/tcss.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "thtml.run",
+        "title": "Run Tamil HTML",
+        "icon": "$(play)"
+      },
+      {
+        "command": "thtml.preview",
+        "title": "Live Preview Tamil HTML",
+        "icon": "$(open-preview)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "thtml.run",
+          "when": "resourceLangId == thtml",
+          "group": "navigation"
+        },
+        {
+          "command": "thtml.preview",
+          "when": "resourceLangId == thtml",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

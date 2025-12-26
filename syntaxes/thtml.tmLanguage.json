@@ -1,0 +1,53 @@
+{
+  "scopeName": "source.thtml",
+  "patterns": [
+    {
+      "begin": "(<பாணி[^>]*>)",
+      "end": "(</பாணி>)",
+      "beginCaptures": {
+        "1": { "name": "entity.name.tag.thtml" }
+      },
+      "endCaptures": {
+        "1": { "name": "entity.name.tag.thtml" }
+      },
+      "patterns": [
+        { "include": "source.tcss" }
+      ]
+    },
+    {
+      "name": "comment.block.html",
+      "begin": "<!--",
+      "end": "-->"
+    },
+    {
+      "name": "meta.tag.thtml",
+      "begin": "(</?)(பக்கம்|தலை|தலைப்பு|உடல்|விபரம்|தொடுப்பு|பாணி|நிரல்|தலைப்பாகம்|அடிப்பகுதி|திசை|பிரிவு|கட்டுரை|ஓரம்|முக்கியம்|தலைப்பு[1-6]|களம்|பகுதி|பத்தி|முறிவு|கோடு|தடிமன்|வலிமை|சாய்வு|அழுத்தம்|சிறிய|குறி|கீழ்|மேல்|நீக்கு|சேர்|பட்டியல்|எண்_பட்டியல்|உருப்படி|படம்|காணொளி|ஒலி|மூலம்|வரைபடம்|இணைப்பு|அட்டவணை|அட்டவணை_தலை|அட்டவணை_உடல்|அட்டவணை_கால்|வரிசை|தலைப்பு_கட்டம்|தரவு|படிவம்|உள்ளீடு|பொத்தான்|தேர்வு|விருப்பம்|உரைப்பெட்டி|சீட்டு|சட்டகம்|விளக்கம்|விவரங்கள்|சுருக்கம்|உரையாடல்)\\b",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.tag.begin.thtml" },
+        "2": { "name": "entity.name.tag.thtml" }
+      },
+      "end": "(/?>)",
+      "endCaptures": {
+        "1": { "name": "punctuation.definition.tag.end.thtml" }
+      },
+      "patterns": [
+        {
+          "name": "entity.other.attribute-name.thtml",
+          "match": "\\b(id|class|src|href|rel|type|width|height|alt|title|வகுப்பு|அடையாளம்|பாதை|முகவரி|வகை|அகலம்|உயரம்|மாற்று|உறவு|இடக்காட்டி|பெயர்|செயல்|முறை|இலக்கு)\\b"
+        },
+        {
+          "name": "string.quoted.double.thtml",
+          "match": "\"[^\"]*\""
+        },
+        {
+          "name": "string.quoted.single.thtml",
+          "match": "'[^']*'"
+        },
+        {
+           "name": "constant.numeric.thtml",
+           "match": "\\b[0-9]+\\b"
+        }
+      ]
+    }
+  ]
+}
