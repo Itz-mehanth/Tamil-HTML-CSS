@@ -116,6 +116,10 @@ Type these prefixes and press `Enter` to auto-generate code:
 | `img-thtml`        | **Image**            | `<படம் ... />`            |
 | `input-thtml`      | **Input**            | `<உள்ளீடு ... />`         |
 | `table-thtml`      | **Table**            | Full Table Structure      |
+| `video-thtml`      | **Video Player**     | `<காணொளி> ...`            |
+| `audio-thtml`      | **Audio Player**     | `<ஒலி> ...`               |
+| `transition-tcss`  | **CSS Transition**   | Smooth Animations         |
+| `transform-tcss`   | **CSS Transform**    | Rotate/Scale Elements     |
 | `flex-center-tcss` | **Flex Center**      | Centers items (CSS)       |
 | `media-tcss`       | **Media Query**      | Responsive Block          |
 
@@ -125,16 +129,20 @@ Type these prefixes and press `Enter` to auto-generate code:
 
 ### HTML Tags & Attributes
 
-| Tamil        | English  | Description          |
-| :----------- | :------- | :------------------- |
-| `<பக்கம்>`   | `<html>` | Root Element         |
-| `<தலை>`      | `<head>` | Metadata Container   |
-| `<உடல்>`     | `<body>` | Visible Content      |
-| `<களம்>`     | `<div>`  | Division / Container |
-| `<தொடுப்பு>` | `<link>` | Link Resource        |
-| `வகுப்பு`    | `class`  | Class Attribute      |
-| `அடையாளம்`   | `id`     | ID Attribute         |
-| `முகவரி`     | `href`   | URL / Reference      |
+| Tamil         | English    | Description          |
+| :------------ | :--------- | :------------------- |
+| `<பக்கம்>`    | `<html>`   | Root Element         |
+| `<தலை>`       | `<head>`   | Metadata Container   |
+| `<உடல்>`      | `<body>`   | Visible Content      |
+| `<களம்>`      | `<div>`    | Division / Container |
+| `<தொடுப்பு>`  | `<link>`   | Link Resource        |
+| `<காணொளி>`    | `<video>`  | Video Player         |
+| `<ஒலி>`       | `<audio>`  | Audio Player         |
+| `வகுப்பு`     | `class`    | Class Attribute      |
+| `அடையாளம்`    | `id`       | ID Attribute         |
+| `முகவரி`      | `href`     | URL / Reference      |
+| `கட்டுப்பாடு` | `controls` | Media Controls       |
+| `தானே_இயங்கு` | `autoplay` | Autoplay Media       |
 
 ### CSS Properties
 
@@ -147,6 +155,16 @@ Type these prefixes and press `Enter` to auto-generate code:
 | `உள்வெளி`      | `padding`    |
 | `காட்சி`       | `display`    |
 | `கூட்டம்`      | `flex`       |
+| `மென்மாற்றம்`  | `transition` |
+| `வடிவ_மாற்றம்` | `transform`  |
+
+---
+
+## 🏆 Credits
+
+A huge thanks to our contributors!
+
+- **PTharanan** ([@PTharanan](https://github.com/PTharanan)) - _Added Multimedia (Video/Audio) & CSS Animation support._
 
 ---
 
