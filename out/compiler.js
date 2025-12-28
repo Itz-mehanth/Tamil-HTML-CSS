@@ -93,7 +93,17 @@ exports.htmlMap = {
     "பெயர்": "name",
     "செயல்": "action",
     "முறை": "method",
-    "இலக்கு": "target"
+    "இலக்கு": "target",
+    // --- Media Attributes ---
+    "கட்டுப்பாடு": "controls",
+    "மீண்டும்": "loop",
+    "தானே_இயங்கு": "autoplay",
+    "ஒலியடக்கு": "muted",
+    "முன்பதிவேற்றம்": "preload",
+    "சுவரொட்டி": "poster",
+    // --- Form Attributes ---
+    "மதிப்பு": "value",
+    "தேவை": "required"
 };
 exports.cssMap = {
     // --- Layout & Box Model ---
@@ -124,6 +134,11 @@ exports.cssMap = {
     "கீழ்": "bottom", // Context aware: in CSS values/props only
     "இடது": "left",
     "வலது": "right",
+    "பெட்டி_அளவு": "box-sizing",
+    "பொருள்_பொருத்தம்": "object-fit",
+    "ஒளிபுகுதன்மை": "opacity",
+    "வடிவ_மாற்றம்": "transform", // transform (சுழற்றுவது, அளவை மாற்றுவது - rotate/scale)
+    "மென்மாற்றம்": "transition", // transition - மென்மையான நிலை மாற்றம்
     // --- Flexbox ---
     "கூட்டம்": "flex",
     "திசை": "flex-direction",
