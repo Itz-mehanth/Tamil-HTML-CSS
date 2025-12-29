@@ -1,0 +1,18 @@
+{
+  "Boilerplate": {
+    "prefix": "!",
+    "body": [
+      "<صفحو>",
+      "  <مٿو>",
+      "    <unwan>$1</unwan>",
+      "    <link href=\"./style.sdcss\" rel=\"stylesheet\" />",
+      "  </مٿو>",
+      "  <jism>",
+      "    <عنوان١>$2</عنوان١>",
+      "    $0",
+      "  </jism>",
+      "</صفحو>"
+    ],
+    "description": "Sindhi HTML Boilerplate"
+  }
+}

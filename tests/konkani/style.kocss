@@ -1,0 +1,9 @@
+माथो१ {
+  rong: red;
+  akshar-map: 50px;
+  text-align: moddi;
+}
+
+कूड {
+  fattlo-rong: #f0f0f0;
+}

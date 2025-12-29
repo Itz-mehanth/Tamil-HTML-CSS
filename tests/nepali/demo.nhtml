@@ -1,0 +1,11 @@
+<पृष्ठ>
+  <शीर्ष>
+    <शीर्षक>Nepali Demo</शीर्षक>
+    <लिंक href="./style.ncss" rel="stylesheet" />
+  </शीर्ष>
+  <शरीर>
+    <शीर्षक१>Namaste Nepali!</शीर्षक१>
+    <अनुच्छेद>Built with Bharat HTML.</अनुच्छेद>
+    <बटन>Click</बटन>
+  </शरीर>
+</पृष्ठ>

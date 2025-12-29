@@ -1,0 +1,54 @@
+{
+  "scopeName": "source.thtml",
+  "patterns": [
+    {
+      "begin": "(<பாணி[^>]*>)",
+      "end": "(</பாணி>)",
+      "beginCaptures": {
+        "1": { "name": "entity.name.tag.thtml" }
+      },
+      "endCaptures": {
+        "1": { "name": "entity.name.tag.thtml" }
+      },
+      "patterns": [
+        { "include": "source.tcss" }
+      ]
+    },
+    {
+      "name": "comment.block.html",
+      "begin": "<!--",
+      "end": "-->"
+    },
+    {
+      "name": "meta.tag.guhtml",
+      "begin": "(<)(/?)(पृष्ठ|शीर्ष|शरीर|शीर्षक|खंड|अनुच्छेद|छवि|கड़ियाँ)(?=[\\s>])",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.tag.begin.guhtml" },
+        "2": { "name": "punctuation.definition.tag.begin.guhtml" },
+        "3": { "name": "entity.name.tag.guhtml" }
+      },
+      "end": "(/?>)",
+      "endCaptures": {
+        "1": { "name": "punctuation.definition.tag.end.guhtml" }
+      },
+      "patterns": [
+        {
+          "name": "entity.other.attribute-name.guhtml",
+          "match": "\\b(id|class|src|href|rel|type|width|height|alt|title|வகுப்பு|அடையாளம்|பாதை|முகவரி|வகை|அகலம்|உயரம்|மாற்று|உறவு|இடக்காட்டி|பெயர்|செயல்|முறை|இலக்கு|கட்டுப்பாடு|மீண்டும்|தானே_இயங்கு|ஒலியடக்கு|முன்பதிவேற்றம்|சுவரொட்டி|மதிப்பு|தேவை)\\b"
+        },
+        {
+          "name": "string.quoted.double.guhtml",
+          "match": "\"[^\"]*\""
+        },
+        {
+          "name": "string.quoted.single.thtml",
+          "match": "'[^']*'"
+        },
+        {
+           "name": "constant.numeric.thtml",
+           "match": "\\b[0-9]+\\b"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+शीर्षक१ {
+  rang: red;
+  font-akar: 50px;
+  text-align: kendar;
+}
+
+शरीर {
+  pichokad-rang: #f0f0f0;
+}

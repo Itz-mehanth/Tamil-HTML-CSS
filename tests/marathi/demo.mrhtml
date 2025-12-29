@@ -1,0 +1,11 @@
+<पृष्ठ>
+  <शीर्ष>
+    <शीर्षक>Marathi Demo</शीर्षक>
+    <लिंक href="./style.mrcss" rel="stylesheet" />
+  </शीर्ष>
+  <शरीर>
+    <शीर्षक१>Namaste Marathi!</शीर्षक१>
+    <परिच्छेद>Built with Bharat HTML.</परिच्छेद>
+    <बटण>Click</बटण>
+  </शरीर>
+</पृष्ठ>

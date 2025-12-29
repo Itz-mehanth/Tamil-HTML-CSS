@@ -1,0 +1,18 @@
+{
+  "Boilerplate": {
+    "prefix": "!",
+    "body": [
+      "<ᱥᱟᱠᱟᱢ>",
+      "  <ᱵᱚᱦᱚᱜ>",
+      "    <ᱧᱩᱛᱩᱢ>$1</ᱧᱩᱛᱩᱢ>",
+      "    <link href=\"./style.satcss\" rel=\"stylesheet\" />",
+      "  </ᱵᱚᱦᱚᱜ>",
+      "  <ᱦᱚᱲᱢᱚ>",
+      "    <ᱧᱩᱛᱩᱢ᱑>$2</ᱧᱩᱛᱩᱢ᱑>",
+      "    $0",
+      "  </ᱦᱚᱲᱢᱚ>",
+      "</ᱥᱟᱠᱟᱢ>"
+    ],
+    "description": "Santali HTML Boilerplate"
+  }
+}

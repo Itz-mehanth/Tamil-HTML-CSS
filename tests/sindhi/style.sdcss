@@ -1,0 +1,9 @@
+عنوان١ {
+  rang: red;
+  font-saiz: 50px;
+  text-align: markaz;
+}
+
+jism {
+  puthion-rang: #f0f0f0;
+}

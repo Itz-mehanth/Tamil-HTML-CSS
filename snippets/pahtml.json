@@ -1,0 +1,18 @@
+{
+  "Boilerplate": {
+    "prefix": "!",
+    "body": [
+      "<ਪੰਨਾ>",
+      "  <ਸਿਰ>",
+      "    <ਸਿਰਲੇਖ>$1</ਸਿਰਲੇਖ>",
+      "    <ਲਿੰਕ href=\"./style.pacss\" rel=\"stylesheet\" />",
+      "  </ਸਿਰ>",
+      "  <ਸਰੀਰ>",
+      "    <ਸਿਰਲੇਖ1>$2</ਸਿਰਲੇਖ1>",
+      "    $0",
+      "  </ਸਰੀਰ>",
+      "</ਪੰਨਾ>"
+    ],
+    "description": "Punjabi HTML Boilerplate"
+  }
+}

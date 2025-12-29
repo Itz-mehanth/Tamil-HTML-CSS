@@ -1,0 +1,11 @@
+<صفحہ>
+  <سر>
+    <عنوان>Urdu Demo</عنوان>
+    <لنک href="./style.ucss" rel="stylesheet" />
+  </سر>
+  <جسم>
+    <سرخی1>Namaste Urdu!</سرخی1>
+    <پیراگراف>Built with Bharat HTML.</پیراگراف>
+    <بٹن>Click</بٹن>
+  </جسم>
+</صفحہ>

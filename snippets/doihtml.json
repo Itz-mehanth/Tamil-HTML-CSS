@@ -1,0 +1,18 @@
+{
+  "Boilerplate": {
+    "prefix": "!",
+    "body": [
+      "<पन्ना>",
+      "  <सिर>",
+      "    <शीर्षक>$1</शीर्षक>",
+      "    <link href=\"./style.dcss\" rel=\"stylesheet\" />",
+      "  </सिर>",
+      "  <शरीर>",
+      "    <शीर्षक१>$2</शीर्षक१>",
+      "    $0",
+      "  </शरीर>",
+      "</पन्ना>"
+    ],
+    "description": "Dogri HTML Boilerplate"
+  }
+}

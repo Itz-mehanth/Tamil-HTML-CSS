@@ -1,0 +1,58 @@
+{
+  "scopeName": "source.tcss",
+  "patterns": [
+    {
+      "name": "comment.block.tcss",
+      "begin": "/\\*",
+      "end": "\\*/"
+    },
+    {
+      "name": "keyword.control.at-rule.tcss",
+      "match": "(@ஊடகம்|@இறக்குமதி|மற்றும்|திரை)"
+    },
+    {
+      "name": "entity.other.attribute-name.class.tcss",
+      "match": "(\\.|வகுப்பு_)[a-zA-Z0-9_\\u0B80-\\u0BFF-]+"
+    },
+    {
+      "name": "entity.other.attribute-name.id.tcss",
+      "match": "(#|அடையாளம்_)[a-zA-Z0-9_\\u0B80-\\u0BFF-]+"
+    },
+    {
+      "name": "entity.name.tag.wildcard.tcss",
+      "match": "எல்லாம்"
+    },
+    {
+      "name": "entity.other.attribute-name.pseudo-class.tcss",
+      "match": "(:)(சுட்டி_மேல்|செயலில்|கவனம்|வருகை_தந்தது|முதல்_பிள்ளை|கடைசி_பிள்ளை|முன்|பின்)"
+    },
+    		{
+			"name": "support.type.property-name.satcss",
+			"match": "(?<=^|[\\s{;])(रंग|पृष्ठभूमि|चौड़ाई|ऊँचाई)(?=\\s*:)"
+		},
+		{
+			"name": "support.constant.property-value.satcss",
+			"match": "(?<=:\\s*)(लाल|नीला|हरा|पीला)(?=[\\s;}]|$)"
+		},
+    {
+      "name": "entity.name.tag.tcss",
+      "match": "\\b(பக்கம்|தலை|தலைப்பு|உடல்|விபரம்|தொடுப்பு|பாணி|நிரல்|தலைப்பாகம்|அடிப்பகுதி|திசை|பிரிவு|கட்டுரை|ஓரம்|முக்கியம்|தலைப்பு[1-6]|களம்|பகுதி|பத்தி|முறிவு|கோடு|தடிமன்|வலிமை|சாய்வு|அழுத்தம்|சிறிய|குறி|கீழ்|மேல்|நீக்கு|சேர்|பட்டியல்|எண்_பட்டியல்|உருப்படி|படம்|காணொளி|ஒலி|மூலம்|வரைபடம்|இணைப்பு|அட்டவணை|அட்டவணை_தலை|அட்டவணை_உடல்|அட்டவணை_கால்|வரிசை|தலைப்பு_கட்டம்|தரவு|படிவம்|உள்ளீடு|பொத்தான்|தேர்வு|விருப்பம்|உரைப்பெட்டி|சீட்டு|சட்டகம்|விளக்கம்|விவரங்கள்|சுருக்கம்|உரையாடல்)\\b"
+    },
+    {
+      "name": "string.quoted.double.tcss",
+      "match": "\".*?\""
+    },
+    {
+      "name": "string.quoted.single.tcss",
+      "match": "'[^']*'"
+    },
+    {
+      "name": "constant.numeric.tcss",
+      "match": "(-?\\d+(\\.\\d+)?(px|rem|em|%|vh|vw|s|ms|deg)?)"
+    },
+    {
+      "name": "constant.other.color.rgb-value.tcss",
+      "match": "(#[0-9a-fA-F]{3,6})\\b"
+    }
+  ]
+}

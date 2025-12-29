@@ -1,2 +1,16 @@
-node_modules/
-.vscode/
+out
+node_modules
+.vscode-test
+*.vsix
+.DS_Store
+
+
+# Generated/Temp files
+package_contributions.json
+
+# Root level test files (Moved to tests/ folder)
+namaste.hhtml
+namaste.hcss
+demo.thtml
+demo.tcss
+hello_tamil.thtml

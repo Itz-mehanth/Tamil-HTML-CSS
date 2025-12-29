@@ -1,180 +1,156 @@
-# 🚀 HTML/CSS Tamil
-
-**The World's First HTML & CSS Programming Language completely in Tamil.**
-
-THTML bridges the digital divide by enabling millions of Tamil speakers to build modern, responsive, and professional websites using their native language. It is not just a translation map; it is a full-featured development environment with syntax highlighting, auto-completion, live preview, and embedded CSS support.
+# Bharat HTML/CSS - Unified Indian Coding Platform 🇮🇳
 
 <div align="center">
-  <img src="images/thtml_logo.png" width="150" alt="THTML Logo" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="images/tcss_logo.png" width="150" alt="TCSS Logo" />
+  <img src="images/extension_icon.png" width="150" alt="Bharat HTML Logo" />
+  <br/>
+  
+  [![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=Mehanth.bharat-code)
+  [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 </div>
 
-## ✨ Key Features
+**The World's First HTML & CSS Programming Language entirely in Native Indian Languages.**
 
-- **HTML in Tamil (`.thtml`)**: Use `<தலை>`, `<உடல்>`, `<பிரிவு>` instead of `<head>`, `<body>`, `<div`.
-- **CSS in Tamil (`.tcss`)**: Style your app with `வகுப்பு` (class), `நிறம்` (color), `பின்னணி` (background).
-- **Full Flexbox & Grid Support**: Build complex layouts using native terms like `கூட்டம்` (flex) and `கட்டம்` (grid).
-- **Embedded CSS**: Write Tamil CSS directly inside your HTML using `<பாணி>`.
-- **Attributes in Tamil**: Use `வகுப்பு="..."` instead of `class="..."`.
-- **Live Preview**: See your changes instantly with a built-in split-screen browser (Click the Play or Preview button).
-- **IntelliSense**: Smart auto-completion for over **50+ HTML tags** and **100+ CSS properties**.
-- **Real-time Error Diagnostics**: Instantly spots unknown tags with red squiggly lines to prevent mistakes.
-- **Zero-Dependency Output**: Compiles to standard, optimized HTML5 & CSS3 that runs on any browser.
+**Bharat HTML** enables you to write HTML and CSS in **23 Indian Languages**. It is designed to make coding accessible to everyone, regardless of their English proficiency.
 
-<br />
+**Repository**: [https://github.com/Itz-mehanth/Tamil-HTML-CSS](https://github.com/Itz-mehanth/Tamil-HTML-CSS)
+**Author**: Mehanth
+**License**: MIT
 
-<img src="images/screenshot.png" alt="HTML/CSS Tamil Demo" width="100%" />
+## ✨ Features
 
----
+*   **Native Coding**: Write standard HTML5 and CSS3 using your mother tongue.
+*   **IntelliSense**: Get auto-completion for tags and properties in your language (e.g., type `<` in a Tamil file to see `தலை`, `உடல்`).
+*   **Snippets**: Type `!` and press `Tab` to generate a full boilerplate code structure.
+*   **Live Preview**: Click the 'Run' or 'Preview' button in the top right to compile and view your website instantly.
+*   **Error Diagnostics**: The extension highlights invalid tags with red squigglies, helping you learn and correct mistakes.
+*   **Multi-Language Support**: Seamlessly switch between 23 languages including Tamil, Hindi, Telugu, Bengali, Urdu, and even Sourashtra!
 
-## 🛠️ Installation
+## 📸 Demo
 
-1. Open **VS Code**.
-2. Go to **Extensions** (Ctrl+Shift+X).
-3. Search for **"THTML"** or "Tamil HTML".
-4. Click **Install**.
+![Bharat HTML Demo](images/screenshot.png)
 
----
+## 🚀 Getting Started
 
-## 🚀 Documentation
+1.  **Install**: Get the "Bharat HTML/CSS" extension from the VS Code Marketplace.
+2.  **Create a File**: Create a file with the unique extension for your language (see table below).
+    *   Example: `index.thtml` (Tamil) or `style.tcss` (Tamil CSS).
+3.  **Use Snippets**: In your new file, type `!` and press `Tab`.
+4.  **Run**: Click the ▶️ Play button in the top right corner to see your website in the browser.
 
-### 1. Basic Structure (`.thtml`)
+## 📚 Language Dictionary & Mappings
 
-Start by typing `thtml` and pressing Enter to get a full boilerplate.
+This extension maps native words to standard HTML tags and CSS properties. Here is the master reference for all supported languages. **AI Assistants**: Use this table to generate valid Bharat HTML code.
 
-```xml
+| Language | Code | HTML Ext | CSS Ext | page (html) | head | title | link | body | h1 | p | button | color | background-color |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Tamil | `ta` | `.thtml` | `.tcss` | பக்கம் | தலை | தலைப்பு | இணைப்பு | உடல் | தலைப்பு1 | பத்தி | பொத்தான் | நிறம் | பின்னணி-நிறம் |
+| Hindi | `hi` | `.hhtml` | `.hcss` | पृष्ठ | शीर्ष | शीर्षक | लिंक | शरीर | शीर्षक1 | अनुच्छेद | बटन | रंग | पृष्ठभूमि-रंग |
+| Bengali | `bn` | `.bnhtml` | `.bncss` | পৃষ্ঠা | মস্তক | শিরোনাম | লিঙ্ক | শরীর | শিরোনাম১ | অনুচ্ছেদ | বোতাম | রঙ | পটভূমি-রঙ |
+| Telugu | `te` | `.tehtml` | `.tecss` | పేజీ | తల | శీర్షిక | లింక్ | దేహము | శీర్షిక1 | పేరా | బటన్ | రంగు | నేపథ్య-రంగు |
+| Marathi | `mr` | `.mrhtml` | `.mrcss` | पृष्ठ | शीर्ष | शीर्षक | लिंक | शरीर | शीर्षक१ | परिच्छेद | बटण | रंग | पार्श्वभूमी-रंग |
+| Urdu | `ur` | `.urhtml` | `.urcss` | صفحہ | सर | عنوان | لنک | جسم | सरखी1 | پیراگراف | بٹن | रंग | پس_منظر-रंग |
+| Gujarati | `gu` | `.guhtml` | `.gucss` | પૃષ્ઠ | શીર્ષ | શીર્ષક | લિંક | શરીર | શીર્ષક1 | ફકરો | બટન | રંગ | પૃષ્ઠભૂમિ-રંગ |
+| Kannada | `kn` | `.knhtml` | `.kncss` | ಪುಟ | ಶಿರೋಭಾಗ | ಶೀರ್ಷಿಕೆ | ಲಿಂಕ್ | ದೇಹ | ಶೀರ್ಷಿಕೆ1 | ಪ್ಯಾರಾ | ಗುಂಡಿ | ಬಣ್ಣ | ಹಿನ್ನೆಲೆ-ಬಣ್ಣ |
+| Odia | `or` | `.orhtml` | `.orcss` | ପୃଷ୍ଠା | ଶୀର୍ଷ | ଶୀର୍ଷକ | ଲିଙ୍କ୍ | ଶରୀର | ଶୀର୍ଷକ୧ | ଅନୁଚ୍ଛେଦ | ବଟନ୍ | ରଙ୍ଗ | ପୃଷ୍ଠଭୂମି-ରଙ୍ଗ |
+| Malayalam | `ml` | `.mlhtml` | `.mlcss` | താൾ | തലക്കെട്ട് | ശീർഷകം | ലിങ്ക് | ശരീരം | തലക്കെട്ട്1 | ഖണ്ഡിക | ബട്ടൺ | നിറം | പശ്ചാത്തല-നിറം |
+| Punjabi | `pa` | `.pahtml` | `.pacss` | ਪੰਨਾ | ਸਿਰ | ਸਿਰਲੇਖ | ਲਿੰਕ | ਸਰੀਰ | ਸਿਰਲੇਖ1 | ਪੈਰਾ | ਬਟਨ | ਰੰਗ | ਪਿਛੋਕੜ-ਰੰਗ |
+| Assamese | `as` | `.ashtml` | `.ascss` | পৃষ্ঠা | শীৰ্ষ | শিৰোনাম | লিংক | শৰীৰ | শিৰোনাম১ | দফা | বুটাম | ৰং | পটভূমি-ৰং |
+| Maithili | `mai` | `.maihtml` | `.maicss` | पृष्ठ | শীर्ष | शीर्षक | लिंक | शरीर | शीर्षक१ | अनुच्छेद | बटन | रंग | पृष्ठभूमि-रंग |
+| Santali | `sat` | `.sathtml` | `.satcss` | ᱥᱟᱠᱟᱢ | ᱵᱚᱦᱚᱜ | ᱧᱩᱛᱩᱢ | link | ᱦᱚᱲᱢᱚ | ᱧᱩᱛᱩᱢ᱑ | ᱠᱷᱚᱸᱫᱽ | ᱵᱚᱛᱟᱢ | rong | tayom-rong |
+| Kashmiri | `ks` | `.kshtml` | `.kscss` | صفحہ | کَل | عُنوان | لِنک | جِسٕم | عُنوان۱ | اقتباس | بَٹَن | rang | pasmanzar-rang |
+| Nepali | `ne` | `.nehtml` | `.necss` | पृष्ठ | शीर्ष | शीर्षक | लिंक | शरीर | शीर्षक१ | अनुच्छेद | बटन | रंग | पृष्ठभूमि-रंग |
+| Konkani | `kok` | `.kokhtml` | `.kokcss` | पान | माथो | विषय | लिंक | कूड | माथो१ | परिच्छेद | बटण | rong | fattlo-rong |
+| Sindhi | `sd` | `.sdhtml` | `.sdcss` | صفحو | مٿو | عنوان | link | جسم | عنوان۱ | پيراگراف | بٽڻ | rang | puthion-rang |
+| Dogri | `doi` | `.doihtml` | `.doicss` | पन्ना | सिर | शीर्षक | link | शरीर | शीर्षक१ | पैरा | बटन | rang | pichokad-rang |
+| Manipuri | `mni` | `.mnihtml` | `.mnicss` | ꯂꯃꯥꯏ | ꯀꯣꯛ | ꯃꯤꯡꯊꯣꯜ | link | ꯍꯛꯆꯥꯡ | ꯃꯤꯡꯊꯣꯜ꯱ | ꯋꯥ ꯄꯔꯦꯡ | ꯅꯝꯕ | machu | manung-machu |
+| Bodo | `brx` | `.brxhtml` | `.brxcss` | बिलाइ | ख'र' | मुुं | link | मोदोम | मुुं१ | फान्दा | बुथाम | rong | un-rong |
+| Sanskrit | `sa` | `.sahtml` | `.sacss` | पृष्ठम् | शीर्षम् | शीर्षकम् | शृङ्खला | शरीरम् | शीर्षकम्१ | अनुच्छेदः | பிஞ்ச | वर्ण | पृष्ठभूमि-वर्ण |
+| Sourashtra | `sou` | `.souhtml` | `.soucss` | ꢥꢵꢎ | ꢡꢵꢬ | ꢱꢶꢫꢫ | ꢣꢶꢰꢓ | ꢏꢴꢥ | ꢱꢶꢫꢫ1 | ꢥꢵꢫꢵ | ꢨꢮꢫ | ꢫꢰꢎ | ꢨꢶꢥꢵ-ꢫꢰꢎ |
+
+
+## 💻 Example Code
+
+### Tamil (`.thtml`)
+```html
 <பக்கம்>
   <தலை>
-    <தலைப்பு>My Website</தலைப்பு>
-    <!-- External CSS Link -->
-    <தொடுப்பு உறவு="stylesheet" முகவரி="style.tcss" />
+    <தலைப்பு>வணக்கம் உலகம்</தலைப்பு>
+    <இணைப்பு href="./style.tcss" rel="stylesheet" />
   </தலை>
   <உடல்>
-    <தலைப்பு1>வணக்கம்!</தலைப்பு1>
+    <தலைப்பு1>எனது முதல் இணையதளம்</தலைப்பு1>
+    <பத்தி>இது பாரத் HTML இல் எழுதப்பட்டது.</பத்தி>
+    <பொத்தான்>கிளிக் செய்யவும்</பொத்தான்>
   </உடல்>
 </பக்கம்>
 ```
 
-### 2. Embedded CSS & Linking (`<பாணி>`)
-
-You can write Tamil CSS directly inside your HTML. You can also import external files.
-
-```xml
-<பாணி>
-   /* 1. Import External File */
-   @இறக்குமதி "style.tcss";
-
-   /* 2. Write Direct Styles */
-   வகுப்பு_button {
-      பின்புலம்: நீளம்;
-      நிறம்: வெள்ளை;
-      எல்லை_ஆரம்: 5px;
-   }
-</பாணி>
+### Hindi (`.hhtml`)
+```html
+<पृष्ठ>
+  <शीर्ष>
+    <शीर्षक>नमस्ते दुनिया</शीर्षक>
+     <लिंक href="./style.hcss" rel="stylesheet" />
+  </शीर्ष>
+  <शरीर>
+    <शीर्षक1>मेरी पहली वेबसाइट</शीर्षक1>
+    <अनुच्छेद>यह भारत HTML में लिखा गया है।</अनुच्छेद>
+    <बटन>क्लिक करें</बटन>
+  </शरीर>
+</पृष्ठ>
 ```
 
-### 3. External CSS (`.tcss`)
-
-Create a separate file (e.g., `style.tcss`) to keep your code clean.
-
-```css
-/* Select by Class (.box) */
-வகுப்பு_box {
-  அகலம்: 100%;
-  உள்வெளி: 20px;
-}
-
-/* Select by ID (#main) */
-அடையாளம்_main {
-  பின்புலம்: சாம்பல்;
-}
-
-/* Pseudo-classes (:hover) */
-வகுப்பு_box: சுட்டி_மேல் {
-  பின்புலம்: சிவப்பு;
-}
+### Sourashtra (`.souhtml`)
+```html
+<ꢥꢵꢎ>
+  <ꢡꢵꢬ>
+    <ꢱꢶꢫꢫ>ꢱꢵꢃꢂꢵꢆ ꢊꢬꢵꢡ</ꢱꢶꢫꢫ>
+     <ꢣꢶꢰꢓ href="./style.soucss" rel="stylesheet" />
+  </ꢡꢵꢬ>
+  <ꢏꢴꢥ>
+    <ꢱꢶꢫꢫ1>ꢥꢵꢫꢡ ꢥꢴꢎ!</ꢱꢶꢫꢫ1>
+    <ꢥꢵꢫꢵ>ꢱꢵꢃꢂꢵꢆ ꢨꢵꢱꢵꢡꢵ ꢓꢵꢬꢶꢎ.</ꢥꢵꢫꢵ>
+    <ꢨꢮꢫ>ꢀꢣꢶꢓ</ꢨꢮꢫ>
+  </ꢏꢴꢥ>
+</ꢥꢵꢎ>
 ```
 
-### 4. Running & Compiling
+## 🛠️ Extensions Reference
 
-- **Compile**: Just save the file. The extension handles everything in memory.
-- **Preview**: Click the **Run** button (▶️) or use the **Preview** command.
+Use these file extensions to activate your language:
 
----
+*   **Tamil**: HTML `.thtml` | CSS `.tcss`
+*   **Hindi**: HTML `.hhtml` | CSS `.hcss`
+*   **Bengali**: HTML `.bnhtml` | CSS `.bncss`
+*   **Telugu**: HTML `.tehtml` | CSS `.tecss`
+*   **Marathi**: HTML `.mrhtml` | CSS `.mrcss`
+*   **Urdu**: HTML `.urhtml` | CSS `.urcss`
+*   **Gujarati**: HTML `.guhtml` | CSS `.gucss`
+*   **Kannada**: HTML `.knhtml` | CSS `.kncss`
+*   **Odia**: HTML `.orhtml` | CSS `.orcss`
+*   **Malayalam**: HTML `.mlhtml` | CSS `.mlcss`
+*   **Punjabi**: HTML `.pahtml` | CSS `.pacss`
+*   **Assamese**: HTML `.ashtml` | CSS `.ascss`
+*   **Maithili**: HTML `.maihtml` | CSS `.maicss`
+*   **Santali**: HTML `.sathtml` | CSS `.satcss`
+*   **Kashmiri**: HTML `.kshtml` | CSS `.kscss`
+*   **Nepali**: HTML `.nehtml` | CSS `.necss`
+*   **Konkani**: HTML `.kokhtml` | CSS `.kokcss`
+*   **Sindhi**: HTML `.sdhtml` | CSS `.sdcss`
+*   **Dogri**: HTML `.doihtml` | CSS `.doicss`
+*   **Manipuri**: HTML `.mnihtml` | CSS `.mnicss`
+*   **Bodo**: HTML `.brxhtml` | CSS `.brxcss`
+*   **Sanskrit**: HTML `.sahtml` | CSS `.sacss`
+*   **Sourashtra**: HTML `.souhtml` | CSS `.soucss`
 
-## ⚡ Code Snippets (குறுக்குவழிகள்)
-
-Type these prefixes and press `Enter` to auto-generate code:
-
-| Prefix             | Description          | Output                    |
-| :----------------- | :------------------- | :------------------------ |
-| `thtml`            | **HTML Boilerplate** | Full `<பக்கம்>` structure |
-| `link-tcss`        | **Link CSS**         | `<தொடுப்பு ... />`        |
-| `style-tcss`       | **Embedded CSS**     | `<பாணி> ... </பாணி>`      |
-| `div-thtml`        | **Div Block**        | `<களம்> ... </களம்>`      |
-| `img-thtml`        | **Image**            | `<படம் ... />`            |
-| `input-thtml`      | **Input**            | `<உள்ளீடு ... />`         |
-| `table-thtml`      | **Table**            | Full Table Structure      |
-| `video-thtml`      | **Video Player**     | `<காணொளி> ...`            |
-| `audio-thtml`      | **Audio Player**     | `<ஒலி> ...`               |
-| `transition-tcss`  | **CSS Transition**   | Smooth Animations         |
-| `transform-tcss`   | **CSS Transform**    | Rotate/Scale Elements     |
-| `flex-center-tcss` | **Flex Center**      | Centers items (CSS)       |
-| `media-tcss`       | **Media Query**      | Responsive Block          |
-
----
-
-## 📚 Quick Reference (அகராதி)
-
-### HTML Tags & Attributes
-
-| Tamil         | English    | Description          |
-| :------------ | :--------- | :------------------- |
-| `<பக்கம்>`    | `<html>`   | Root Element         |
-| `<தலை>`       | `<head>`   | Metadata Container   |
-| `<உடல்>`      | `<body>`   | Visible Content      |
-| `<களம்>`      | `<div>`    | Division / Container |
-| `<தொடுப்பு>`  | `<link>`   | Link Resource        |
-| `<காணொளி>`    | `<video>`  | Video Player         |
-| `<ஒலி>`       | `<audio>`  | Audio Player         |
-| `வகுப்பு`     | `class`    | Class Attribute      |
-| `அடையாளம்`    | `id`       | ID Attribute         |
-| `முகவரி`      | `href`     | URL / Reference      |
-| `கட்டுப்பாடு` | `controls` | Media Controls       |
-| `தானே_இயங்கு` | `autoplay` | Autoplay Media       |
-
-### CSS Properties
-
-| Tamil          | English      |
-| :------------- | :----------- |
-| `நிறம்`        | `color`      |
-| `பின்புலம்`    | `background` |
-| `எழுத்து_அளவு` | `font-size`  |
-| `விளிம்பு`     | `margin`     |
-| `உள்வெளி`      | `padding`    |
-| `காட்சி`       | `display`    |
-| `கூட்டம்`      | `flex`       |
-| `மென்மாற்றம்`  | `transition` |
-| `வடிவ_மாற்றம்` | `transform`  |
-
----
-
-## 🏆 Credits
+## 🎖️ Credits
 
 A huge thanks to our contributors!
 
-- **PTharanan** ([@PTharanan](https://github.com/PTharanan)) - _Added Multimedia (Video/Audio) & CSS Animation support._
+*   **PTharanan** ([@PTharanan](https://github.com/PTharanan)) - Added Multimedia (Video/Audio) & CSS Animation support (Tamil).
 
----
+## 🤝 Contributing
 
-## ❤️ Contributions
+We welcome contributions! Please open an issue or submit a pull request on our GitHub repository.
 
-This project is open-source! We welcome contributions from the community to expand the vocabulary and improve the compiler.
-
-**Repository**: [https://github.com/Itz-mehanth/Tamil-HTML-CSS](https://github.com/Itz-mehanth/Tamil-HTML-CSS)  
-**License**: MIT
-
----
-
-_Made with ❤️ for the Tamil Tech Community._
+**Made with ❤️ for India.**

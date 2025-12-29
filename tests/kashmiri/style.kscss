@@ -1,0 +1,9 @@
+عُنوان۱ {
+  rang: red;
+  font-saiz: 50px;
+  text-align: markaz;
+}
+
+جِسٕم {
+  pasmanzar-rang: #f0f0f0;
+}

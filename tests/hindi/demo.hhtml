@@ -1,0 +1,11 @@
+<पृष्ठ>
+  <शीर्ष>
+    <शीर्षक>Hindi Demo</शीर्षक>
+    <लिंक href="./style.hcss" rel="stylesheet" />
+  </शीर्ष>
+  <शरीर>
+    <शीर्षक1>Namaste Hindi!</शीर्षक1>
+    <अनुच्छेद>Built with Bharat HTML.</अनुच्छेद>
+    <बटन>Click</बटन>
+  </शरीर>
+</पृष्ठ>

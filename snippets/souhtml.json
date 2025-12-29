@@ -1,0 +1,18 @@
+{
+  "Boilerplate": {
+    "prefix": "!",
+    "body": [
+      "<ꢥꢵꢎ>",
+      "  <ꢡꢵꢬ>",
+      "    <ꢱꢶꢫꢫ>$1</ꢱꢶꢫꢫ>",
+      "    <ꢣꢶꢰꢓ href=\"./style.soucss\" rel=\"stylesheet\" />",
+      "  </ꢡꢵꢬ>",
+      "  <ꢏꢴꢥ>",
+      "    <ꢱꢶꢫꢫ1>$2</ꢱꢶꢫꢫ1>",
+      "    $0",
+      "  </ꢏꢴꢥ>",
+      "</ꢥꢵꢎ>"
+    ],
+    "description": "Sourashtra HTML Boilerplate"
+  }
+}

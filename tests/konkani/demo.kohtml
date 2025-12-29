@@ -1,0 +1,11 @@
+<पान>
+  <माथो>
+    <विषय>Konkani Demo</विषय>
+    <लिंक href="./style.kocss" rel="stylesheet" />
+  </माथो>
+  <कूड>
+    <माथो१>Namaste Konkani!</माथो१>
+    <परिच्छेद>Built with Bharat HTML.</परिच्छेद>
+    <बटण>Click</बटण>
+  </कूड>
+</पान>

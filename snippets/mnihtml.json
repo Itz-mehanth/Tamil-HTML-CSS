@@ -1,0 +1,18 @@
+{
+  "Boilerplate": {
+    "prefix": "!",
+    "body": [
+      "<ꯂꯃꯥꯏ>",
+      "  <ꯀꯣꯛ>",
+      "    <ꯃꯤꯡꯊꯣꯜ>$1</ꯃꯤꯡꯊꯣꯜ>",
+      "    <link href=\"./style.mnicss\" rel=\"stylesheet\" />",
+      "  </ꯀꯣꯛ>",
+      "  <ꯍꯛꯆꯥꯡ>",
+      "    <ꯃꯤꯡꯊꯣꯜ꯱>$2</ꯃꯤꯡꯊꯣꯜ꯱>",
+      "    $0",
+      "  </ꯍꯛꯆꯥꯡ>",
+      "</ꯂꯃꯥꯏ>"
+    ],
+    "description": "Manipuri HTML Boilerplate"
+  }
+}

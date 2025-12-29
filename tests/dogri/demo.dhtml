@@ -1,0 +1,11 @@
+<पन्ना>
+  <सिर>
+    <शीर्षक>Dogri Demo</शीर्षक>
+    <link href="./style.dcss" rel="stylesheet" />
+  </सिर>
+  <शरीर>
+    <शीर्षक१>Namaste Dogri!</शीर्षक१>
+    <पैरा>Built with Bharat HTML.</पैरा>
+    <boton>Click</boton>
+  </शरीर>
+</पन्ना>

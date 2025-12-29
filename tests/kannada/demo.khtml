@@ -1,0 +1,11 @@
+<ಪುಟ>
+  <ಶಿರೋಭಾಗ>
+    <ಶೀರ್ಷಿಕೆ>Kannada Demo</ಶೀರ್ಷಿಕೆ>
+    <ಲಿಂಕ್ href="./style.kcss" rel="stylesheet" />
+  </ಶಿರೋಭಾಗ>
+  <ದೇಹ>
+    <ಶೀರ್ಷಿಕೆ1>Namaste Kannada!</ಶೀರ್ಷಿಕೆ1>
+    <ಪ್ಯಾರಾ>Built with Bharat HTML.</ಪ್ಯಾರಾ>
+    <ಗುಂಡಿ>Click</ಗುಂಡಿ>
+  </ದೇಹ>
+</ಪುಟ>

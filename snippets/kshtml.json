@@ -1,0 +1,18 @@
+{
+  "Boilerplate": {
+    "prefix": "!",
+    "body": [
+      "<صفحہ>",
+      "  <کَل>",
+      "    <عُنوان>$1</عُنوان>",
+      "    <لِنک href=\"./style.kscss\" rel=\"stylesheet\" />",
+      "  </کَل>",
+      "  <جِسٕم>",
+      "    <عُنوان۱>$2</عُنوان۱>",
+      "    $0",
+      "  </جِسٕم>",
+      "</صفحہ>"
+    ],
+    "description": "Kashmiri HTML Boilerplate"
+  }
+}

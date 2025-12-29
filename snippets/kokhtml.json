@@ -1,0 +1,18 @@
+{
+  "Boilerplate": {
+    "prefix": "!",
+    "body": [
+      "<पान>",
+      "  <माथो>",
+      "    <विषय>$1</विषय>",
+      "    <लिंक href=\"./style.kocss\" rel=\"stylesheet\" />",
+      "  </माथो>",
+      "  <कूड>",
+      "    <माथो१>$2</माथो१>",
+      "    $0",
+      "  </कूड>",
+      "</पान>"
+    ],
+    "description": "Konkani HTML Boilerplate"
+  }
+}

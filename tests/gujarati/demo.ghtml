@@ -1,0 +1,11 @@
+<પૃષ્ઠ>
+  <શીર્ષ>
+    <શીર્ષક>Gujarati Demo</શીર્ષક>
+    <લિંક href="./style.gcss" rel="stylesheet" />
+  </શીર્ષ>
+  <શરીર>
+    <શીર્ષક1>Namaste Gujarati!</શીર્ષક1>
+    <ફકરો>Built with Bharat HTML.</ફકરો>
+    <બટન>Click</બટન>
+  </શરીર>
+</પૃષ્ઠ>

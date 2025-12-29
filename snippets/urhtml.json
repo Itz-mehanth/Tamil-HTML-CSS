@@ -1,0 +1,18 @@
+{
+  "Boilerplate": {
+    "prefix": "!",
+    "body": [
+      "<صفحہ>",
+      "  <سر>",
+      "    <عنوان>$1</عنوان>",
+      "    <لنک href=\"./style.ucss\" rel=\"stylesheet\" />",
+      "  </سر>",
+      "  <جسم>",
+      "    <سرخی1>$2</سرخی1>",
+      "    $0",
+      "  </جسم>",
+      "</صفحہ>"
+    ],
+    "description": "Urdu HTML Boilerplate"
+  }
+}

@@ -1,0 +1,11 @@
+<পৃষ্ঠা>
+  <মস্তক>
+    <শিরোনাম>Bengali Demo</শিরোনাম>
+    <লিঙ্ক href="./style.bcss" rel="stylesheet" />
+  </মস্তক>
+  <শরীর>
+    <শিরোনাম১>Namaste Bengali!</শিরোনাম১>
+    <অনুচ্ছেদ>Built with Bharat HTML.</অনুচ্ছেদ>
+    <বোতাম>Click</বোতাম>
+  </শরীর>
+</পৃষ্ঠা>

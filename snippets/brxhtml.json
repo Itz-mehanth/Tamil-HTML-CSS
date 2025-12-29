@@ -1,0 +1,18 @@
+{
+  "Boilerplate": {
+    "prefix": "!",
+    "body": [
+      "<बिलाइ>",
+      "  <ख'र'>",
+      "    <मुुं>$1</मुुं>",
+      "    <link href=\"./style.brxcss\" rel=\"stylesheet\" />",
+      "  </ख'र'>",
+      "  <मोदोम>",
+      "    <मुुं१>$2</मुुं१>",
+      "    $0",
+      "  </मोदोम>",
+      "</बिलाइ>"
+    ],
+    "description": "Bodo HTML Boilerplate"
+  }
+}
