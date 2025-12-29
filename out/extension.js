@@ -207,13 +207,21 @@ function activate(context) {
         if (!selected)
             return;
         const targetLang = selected.langConfig;
+        // Detect if this is HTML or CSS file
+        const isHtmlFile = editor.document.fileName.endsWith(currentLang.htmlExt);
+        const isCssFile = editor.document.fileName.endsWith(currentLang.cssExt);
         // Load both locales
         const compiler = require('./compiler');
         compiler.loadLocale(currentLang.code);
-        const sourceMap = Object.assign({}, compiler.htmlMap);
+        const sourceHtmlMap = Object.assign({}, compiler.htmlMap);
+        const sourceCssMap = Object.assign({}, compiler.cssMap);
         compiler.loadLocale(targetLang.code);
-        const targetMap = Object.assign({}, compiler.htmlMap);
-        // Create reverse map (html -> native) for target
+        const targetHtmlMap = Object.assign({}, compiler.htmlMap);
+        const targetCssMap = Object.assign({}, compiler.cssMap);
+        // Choose the appropriate map based on file type
+        const sourceMap = isHtmlFile ? sourceHtmlMap : sourceCssMap;
+        const targetMap = isHtmlFile ? targetHtmlMap : targetCssMap;
+        // Create reverse map (english -> native) for target
         const reverseTargetMap = {};
         for (const [native, eng] of Object.entries(targetMap)) {
             reverseTargetMap[eng] = native;
@@ -222,10 +230,17 @@ function activate(context) {
         let convertedCode = editor.document.getText();
         for (const [sourceNative, englishTag] of Object.entries(sourceMap)) {
             const targetNative = reverseTargetMap[englishTag];
-            if (targetNative) {
-                // Replace opening and closing tags
-                const regex = new RegExp(`<(\/?)${sourceNative.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([ >])`, 'g');
-                convertedCode = convertedCode.replace(regex, `<$1${targetNative}$2`);
+            if (targetNative && sourceNative !== targetNative) {
+                if (isHtmlFile) {
+                    // For HTML: Replace tags with angle brackets
+                    const regex = new RegExp(`<(\/?)${sourceNative.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([ >])`, 'g');
+                    convertedCode = convertedCode.replace(regex, `<$1${targetNative}$2`);
+                }
+                else if (isCssFile) {
+                    // For CSS: Replace property names (word boundaries)
+                    const regex = new RegExp(`\\b${sourceNative.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'g');
+                    convertedCode = convertedCode.replace(regex, targetNative);
+                }
             }
         }
         // Create new file
@@ -323,6 +338,43 @@ function activate(context) {
         });
         context.subscriptions.push(hoverProvider);
     });
+    // 5b2. Hover Documentation for CSS
+    languages_1.finalSupportedLanguages.forEach(lang => {
+        const cssHoverProvider = vscode.languages.registerHoverProvider(lang.cssId, {
+            provideHover(document, position) {
+                const compiler = require('./compiler');
+                compiler.loadLocale(lang.code);
+                const range = document.getWordRangeAtPosition(position);
+                if (!range)
+                    return;
+                const word = document.getText(range);
+                const cssProperty = compiler.cssMap[word];
+                if (cssProperty) {
+                    const markdown = new vscode.MarkdownString();
+                    markdown.appendMarkdown(`**${word}** → \`${cssProperty}\`\n\n`);
+                    // Add descriptions for common CSS properties
+                    const descriptions = {
+                        'color': 'Sets the text color',
+                        'background-color': 'Sets the background color',
+                        'font-size': 'Sets the font size',
+                        'margin': 'Sets the outer spacing',
+                        'padding': 'Sets the inner spacing',
+                        'border': 'Sets the border style',
+                        'width': 'Sets the element width',
+                        'height': 'Sets the element height',
+                        'display': 'Sets the display type',
+                        'position': 'Sets the positioning method'
+                    };
+                    if (descriptions[cssProperty]) {
+                        markdown.appendMarkdown(`*${descriptions[cssProperty]}*`);
+                    }
+                    return new vscode.Hover(markdown);
+                }
+                return undefined;
+            }
+        });
+        context.subscriptions.push(cssHoverProvider);
+    });
     // 5c. Code Actions - Quick Fix for English Tags
     languages_1.finalSupportedLanguages.forEach(lang => {
         const codeActionProvider = vscode.languages.registerCodeActionsProvider(lang.id, {
@@ -358,6 +410,42 @@ function activate(context) {
             providedCodeActionKinds: [vscode.CodeActionKind.QuickFix]
         });
         context.subscriptions.push(codeActionProvider);
+    });
+    // 5c2. Code Actions for CSS
+    languages_1.finalSupportedLanguages.forEach(lang => {
+        const cssCodeActionProvider = vscode.languages.registerCodeActionsProvider(lang.cssId, {
+            provideCodeActions(document, range) {
+                const compiler = require('./compiler');
+                compiler.loadLocale(lang.code);
+                // Create reverse map (english -> native)
+                const reverseMap = {};
+                for (const [native, eng] of Object.entries(compiler.cssMap)) {
+                    reverseMap[eng] = native;
+                }
+                const line = document.lineAt(range.start.line);
+                const actions = [];
+                // Check for English CSS properties
+                const propRegex = /\b([\w-]+)\s*:/g;
+                let match;
+                while ((match = propRegex.exec(line.text)) !== null) {
+                    const englishProp = match[1];
+                    const nativeProp = reverseMap[englishProp];
+                    if (nativeProp && englishProp !== nativeProp) {
+                        const action = new vscode.CodeAction(`Convert to ${nativeProp}`, vscode.CodeActionKind.QuickFix);
+                        action.edit = new vscode.WorkspaceEdit();
+                        const fullText = document.getText();
+                        const converted = fullText.replace(new RegExp(`\\b${englishProp}\\b`, 'g'), nativeProp);
+                        action.edit.replace(document.uri, new vscode.Range(0, 0, document.lineCount, 0), converted);
+                        action.isPreferred = true;
+                        actions.push(action);
+                    }
+                }
+                return actions;
+            }
+        }, {
+            providedCodeActionKinds: [vscode.CodeActionKind.QuickFix]
+        });
+        context.subscriptions.push(cssCodeActionProvider);
     });
     // 5d. Document Formatter - Auto-indent
     languages_1.finalSupportedLanguages.forEach(lang => {
