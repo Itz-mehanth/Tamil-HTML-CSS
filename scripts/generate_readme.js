@@ -75,9 +75,27 @@ let readmeContent = `# Bharat HTML/CSS - Unified Indian Coding Platform 🇮🇳
 *   **Emmet Support**: Type abbreviations like \`page>head>title\` and expand to full nested structure
 *   **Color Picker**: Visual color selection in CSS files - click on any color to open the picker
 
-## 📸 Demo
+## 📸 Feature Demonstrations
 
-![Bharat HTML Demo](images/screenshot.png)
+### IntelliSense & Auto-Completion
+![Tamil IntelliSense](images/tamil_intellisense.png)
+*Auto-completion in Tamil - type \`<\` to see all available tags*
+
+### Hover Documentation
+![Kannada Hover](images/kannada_hover.png)
+*Hover over any tag to see its English equivalent and description*
+
+### Language Switcher
+![Language Switcher](images/language_switcher.png)
+*Convert your code between any of the 23 languages instantly*
+
+### Quick Fixes & Code Actions
+![Maithili Quick Fix](images/maithili_quickfix.png)
+*Type English tags and get suggestions to convert to native*
+
+### Command Palette
+![Switch Language Command](images/switch_command.png)
+*Access all features via Command Palette (Ctrl+Shift+P)*
 
 ## 🚀 Getting Started
 
