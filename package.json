@@ -2,7 +2,7 @@
   "name": "html-css-tamil",
   "displayName": "Bharat HTML/CSS",
   "description": "The unified web programming platform for Indian languages. Code natively in Tamil, Hindi, and more.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "Mehanth",
   "icon": "images/extension_icon.png",
   "engines": {
@@ -30,378 +30,929 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
-
     "languages": [
       {
         "id": "thtml",
-        "aliases": ["Tamil HTML", "thtml"],
-        "extensions": [".thtml"],
+        "aliases": [
+          "Tamil HTML",
+          "thtml"
+        ],
+        "extensions": [
+          ".thtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/tamil/thtml_logo.png", "dark": "./images/tamil/thtml_logo.png" }
+        "icon": {
+          "light": "./images/tamil/thtml_logo.png",
+          "dark": "./images/tamil/thtml_logo.png"
+        }
       },
       {
         "id": "tcss",
-        "aliases": ["Tamil CSS", "tcss"],
-        "extensions": [".tcss"],
+        "aliases": [
+          "Tamil CSS",
+          "tcss"
+        ],
+        "extensions": [
+          ".tcss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/tamil/tcss_logo.png", "dark": "./images/tamil/tcss_logo.png" }
+        "icon": {
+          "light": "./images/tamil/tcss_logo.png",
+          "dark": "./images/tamil/tcss_logo.png"
+        }
       },
       {
         "id": "hhtml",
-        "aliases": ["Hindi HTML", "hhtml"],
-        "extensions": [".hhtml"],
+        "aliases": [
+          "Hindi HTML",
+          "hhtml"
+        ],
+        "extensions": [
+          ".hhtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/hindi/hhtml_logo.png", "dark": "./images/hindi/hhtml_logo.png" }
+        "icon": {
+          "light": "./images/hindi/hhtml_logo.png",
+          "dark": "./images/hindi/hhtml_logo.png"
+        }
       },
       {
         "id": "hcss",
-        "aliases": ["Hindi CSS", "hcss"],
-        "extensions": [".hcss"],
+        "aliases": [
+          "Hindi CSS",
+          "hcss"
+        ],
+        "extensions": [
+          ".hcss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/hindi/hcss_logo.png", "dark": "./images/hindi/hcss_logo.png" }
+        "icon": {
+          "light": "./images/hindi/hcss_logo.png",
+          "dark": "./images/hindi/hcss_logo.png"
+        }
       },
       {
         "id": "bnhtml",
-        "aliases": ["Bengali HTML", "bhtml"],
-        "extensions": [".bhtml"],
+        "aliases": [
+          "Bengali HTML",
+          "bhtml"
+        ],
+        "extensions": [
+          ".bhtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/bengali/bhtml_logo.png", "dark": "./images/bengali/bhtml_logo.png" }
+        "icon": {
+          "light": "./images/bengali/bhtml_logo.png",
+          "dark": "./images/bengali/bhtml_logo.png"
+        }
       },
       {
         "id": "bcss",
-        "aliases": ["Bengali CSS", "bcss"],
-        "extensions": [".bcss"],
+        "aliases": [
+          "Bengali CSS",
+          "bcss"
+        ],
+        "extensions": [
+          ".bcss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/bengali/bcss_logo.png", "dark": "./images/bengali/bcss_logo.png" }
+        "icon": {
+          "light": "./images/bengali/bcss_logo.png",
+          "dark": "./images/bengali/bcss_logo.png"
+        }
       },
       {
         "id": "tehtml",
-        "aliases": ["Telugu HTML", "tehtml"],
-        "extensions": [".tehtml"],
+        "aliases": [
+          "Telugu HTML",
+          "tehtml"
+        ],
+        "extensions": [
+          ".tehtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/telugu/tehtml_logo.png", "dark": "./images/telugu/tehtml_logo.png" }
+        "icon": {
+          "light": "./images/telugu/tehtml_logo.png",
+          "dark": "./images/telugu/tehtml_logo.png"
+        }
       },
       {
         "id": "tecss",
-        "aliases": ["Telugu CSS", "tecss"],
-        "extensions": [".tecss"],
+        "aliases": [
+          "Telugu CSS",
+          "tecss"
+        ],
+        "extensions": [
+          ".tecss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/telugu/tecss_logo.png", "dark": "./images/telugu/tecss_logo.png" }
+        "icon": {
+          "light": "./images/telugu/tecss_logo.png",
+          "dark": "./images/telugu/tecss_logo.png"
+        }
       },
       {
         "id": "mrhtml",
-        "aliases": ["Marathi HTML", "mrhtml"],
-        "extensions": [".mrhtml"],
+        "aliases": [
+          "Marathi HTML",
+          "mrhtml"
+        ],
+        "extensions": [
+          ".mrhtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/marathi/mrhtml_logo.png", "dark": "./images/marathi/mrhtml_logo.png" }
+        "icon": {
+          "light": "./images/marathi/mrhtml_logo.png",
+          "dark": "./images/marathi/mrhtml_logo.png"
+        }
       },
       {
         "id": "mrcss",
-        "aliases": ["Marathi CSS", "mrcss"],
-        "extensions": [".mrcss"],
+        "aliases": [
+          "Marathi CSS",
+          "mrcss"
+        ],
+        "extensions": [
+          ".mrcss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/marathi/mrcss_logo.png", "dark": "./images/marathi/mrcss_logo.png" }
+        "icon": {
+          "light": "./images/marathi/mrcss_logo.png",
+          "dark": "./images/marathi/mrcss_logo.png"
+        }
       },
       {
         "id": "urhtml",
-        "aliases": ["Urdu HTML", "urhtml"],
-        "extensions": [".uhtml"],
+        "aliases": [
+          "Urdu HTML",
+          "urhtml"
+        ],
+        "extensions": [
+          ".uhtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/urdu/uhtml_logo.png", "dark": "./images/urdu/uhtml_logo.png" }
+        "icon": {
+          "light": "./images/urdu/uhtml_logo.png",
+          "dark": "./images/urdu/uhtml_logo.png"
+        }
       },
       {
         "id": "urcss",
-        "aliases": ["Urdu CSS", "urcss"],
-        "extensions": [".ucss"],
+        "aliases": [
+          "Urdu CSS",
+          "urcss"
+        ],
+        "extensions": [
+          ".ucss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/urdu/ucss_logo.png", "dark": "./images/urdu/ucss_logo.png" }
+        "icon": {
+          "light": "./images/urdu/ucss_logo.png",
+          "dark": "./images/urdu/ucss_logo.png"
+        }
       },
       {
         "id": "guhtml",
-        "aliases": ["Gujarati HTML", "guhtml"],
-        "extensions": [".ghtml"],
+        "aliases": [
+          "Gujarati HTML",
+          "guhtml"
+        ],
+        "extensions": [
+          ".ghtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/gujarati/ghtml_logo.png", "dark": "./images/gujarati/ghtml_logo.png" }
+        "icon": {
+          "light": "./images/gujarati/ghtml_logo.png",
+          "dark": "./images/gujarati/ghtml_logo.png"
+        }
       },
       {
         "id": "gucss",
-        "aliases": ["Gujarati CSS", "gucss"],
-        "extensions": [".gcss"],
+        "aliases": [
+          "Gujarati CSS",
+          "gucss"
+        ],
+        "extensions": [
+          ".gcss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/gujarati/gcss_logo.png", "dark": "./images/gujarati/gcss_logo.png" }
+        "icon": {
+          "light": "./images/gujarati/gcss_logo.png",
+          "dark": "./images/gujarati/gcss_logo.png"
+        }
       },
       {
         "id": "knhtml",
-        "aliases": ["Kannada HTML", "khtml"],
-        "extensions": [".khtml"],
+        "aliases": [
+          "Kannada HTML",
+          "khtml"
+        ],
+        "extensions": [
+          ".khtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/kannada/khtml_logo.png", "dark": "./images/kannada/khtml_logo.png" }
+        "icon": {
+          "light": "./images/kannada/khtml_logo.png",
+          "dark": "./images/kannada/khtml_logo.png"
+        }
       },
       {
         "id": "kncss",
-        "aliases": ["Kannada CSS", "kcss"],
-        "extensions": [".kcss"],
+        "aliases": [
+          "Kannada CSS",
+          "kcss"
+        ],
+        "extensions": [
+          ".kcss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/kannada/kcss_logo.png", "dark": "./images/kannada/kcss_logo.png" }
+        "icon": {
+          "light": "./images/kannada/kcss_logo.png",
+          "dark": "./images/kannada/kcss_logo.png"
+        }
       },
       {
         "id": "orhtml",
-        "aliases": ["Odia HTML", "orhtml"],
-        "extensions": [".ohtml"],
+        "aliases": [
+          "Odia HTML",
+          "orhtml"
+        ],
+        "extensions": [
+          ".ohtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/odia/orhtml_logo.png", "dark": "./images/odia/orhtml_logo.png" }
+        "icon": {
+          "light": "./images/odia/orhtml_logo.png",
+          "dark": "./images/odia/orhtml_logo.png"
+        }
       },
       {
         "id": "orcss",
-        "aliases": ["Odia CSS", "orcss"],
-        "extensions": [".ocss"],
+        "aliases": [
+          "Odia CSS",
+          "orcss"
+        ],
+        "extensions": [
+          ".ocss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/odia/orcss_logo.png", "dark": "./images/odia/orcss_logo.png" }
+        "icon": {
+          "light": "./images/odia/orcss_logo.png",
+          "dark": "./images/odia/orcss_logo.png"
+        }
       },
       {
         "id": "mlhtml",
-        "aliases": ["Malayalam HTML", "mhtml"],
-        "extensions": [".mhtml"],
+        "aliases": [
+          "Malayalam HTML",
+          "mhtml"
+        ],
+        "extensions": [
+          ".mhtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/malayalam/mlhtml_logo.png", "dark": "./images/malayalam/mlhtml_logo.png" }
+        "icon": {
+          "light": "./images/malayalam/mlhtml_logo.png",
+          "dark": "./images/malayalam/mlhtml_logo.png"
+        }
       },
       {
         "id": "mlcss",
-        "aliases": ["Malayalam CSS", "mcss"],
-        "extensions": [".mcss"],
+        "aliases": [
+          "Malayalam CSS",
+          "mcss"
+        ],
+        "extensions": [
+          ".mcss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/malayalam/mlcss_logo.png", "dark": "./images/malayalam/mlcss_logo.png" }
+        "icon": {
+          "light": "./images/malayalam/mlcss_logo.png",
+          "dark": "./images/malayalam/mlcss_logo.png"
+        }
       },
       {
         "id": "pahtml",
-        "aliases": ["Punjabi HTML", "pahtml"],
-        "extensions": [".pahtml"],
+        "aliases": [
+          "Punjabi HTML",
+          "pahtml"
+        ],
+        "extensions": [
+          ".pahtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/punjabi/pahtml_logo.png", "dark": "./images/punjabi/pahtml_logo.png" }
+        "icon": {
+          "light": "./images/punjabi/pahtml_logo.png",
+          "dark": "./images/punjabi/pahtml_logo.png"
+        }
       },
       {
         "id": "pacss",
-        "aliases": ["Punjabi CSS", "pacss"],
-        "extensions": [".pacss"],
+        "aliases": [
+          "Punjabi CSS",
+          "pacss"
+        ],
+        "extensions": [
+          ".pacss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/punjabi/pacss_logo.png", "dark": "./images/punjabi/pacss_logo.png" }
+        "icon": {
+          "light": "./images/punjabi/pacss_logo.png",
+          "dark": "./images/punjabi/pacss_logo.png"
+        }
       },
       {
         "id": "ashtml",
-        "aliases": ["Assamese HTML", "ashtml"],
-        "extensions": [".ashtml"],
+        "aliases": [
+          "Assamese HTML",
+          "ashtml"
+        ],
+        "extensions": [
+          ".ashtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/assamese/ashtml_logo.png", "dark": "./images/assamese/ashtml_logo.png" }
+        "icon": {
+          "light": "./images/assamese/ashtml_logo.png",
+          "dark": "./images/assamese/ashtml_logo.png"
+        }
       },
       {
         "id": "ascss",
-        "aliases": ["Assamese CSS", "ascss"],
-        "extensions": [".ascss"],
+        "aliases": [
+          "Assamese CSS",
+          "ascss"
+        ],
+        "extensions": [
+          ".ascss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/assamese/ascss_logo.png", "dark": "./images/assamese/ascss_logo.png" }
+        "icon": {
+          "light": "./images/assamese/ascss_logo.png",
+          "dark": "./images/assamese/ascss_logo.png"
+        }
       },
       {
         "id": "maihtml",
-        "aliases": ["Maithili HTML", "maihtml"],
-        "extensions": [".maihtml"],
+        "aliases": [
+          "Maithili HTML",
+          "maihtml"
+        ],
+        "extensions": [
+          ".maihtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/maithili/maihtml_logo.png", "dark": "./images/maithili/maihtml_logo.png" }
+        "icon": {
+          "light": "./images/maithili/maihtml_logo.png",
+          "dark": "./images/maithili/maihtml_logo.png"
+        }
       },
       {
         "id": "maicss",
-        "aliases": ["Maithili CSS", "maicss"],
-        "extensions": [".maicss"],
+        "aliases": [
+          "Maithili CSS",
+          "maicss"
+        ],
+        "extensions": [
+          ".maicss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/maithili/maicss_logo.png", "dark": "./images/maithili/maicss_logo.png" }
+        "icon": {
+          "light": "./images/maithili/maicss_logo.png",
+          "dark": "./images/maithili/maicss_logo.png"
+        }
       },
       {
         "id": "sathtml",
-        "aliases": ["Santali HTML", "sathtml"],
-        "extensions": [".sathtml"],
+        "aliases": [
+          "Santali HTML",
+          "sathtml"
+        ],
+        "extensions": [
+          ".sathtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/santali/sathtml_logo.png", "dark": "./images/santali/sathtml_logo.png" }
+        "icon": {
+          "light": "./images/santali/sathtml_logo.png",
+          "dark": "./images/santali/sathtml_logo.png"
+        }
       },
       {
         "id": "satcss",
-        "aliases": ["Santali CSS", "satcss"],
-        "extensions": [".satcss"],
+        "aliases": [
+          "Santali CSS",
+          "satcss"
+        ],
+        "extensions": [
+          ".satcss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/santali/satcss_logo.png", "dark": "./images/santali/satcss_logo.png" }
+        "icon": {
+          "light": "./images/santali/satcss_logo.png",
+          "dark": "./images/santali/satcss_logo.png"
+        }
       },
       {
         "id": "kshtml",
-        "aliases": ["Kashmiri HTML", "kshtml"],
-        "extensions": [".kshtml"],
+        "aliases": [
+          "Kashmiri HTML",
+          "kshtml"
+        ],
+        "extensions": [
+          ".kshtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/kashmiri/kshtml_logo.png", "dark": "./images/kashmiri/kshtml_logo.png" }
+        "icon": {
+          "light": "./images/kashmiri/kshtml_logo.png",
+          "dark": "./images/kashmiri/kshtml_logo.png"
+        }
       },
       {
         "id": "kscss",
-        "aliases": ["Kashmiri CSS", "kscss"],
-        "extensions": [".kscss"],
+        "aliases": [
+          "Kashmiri CSS",
+          "kscss"
+        ],
+        "extensions": [
+          ".kscss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/kashmiri/kscss_logo.png", "dark": "./images/kashmiri/kscss_logo.png" }
+        "icon": {
+          "light": "./images/kashmiri/kscss_logo.png",
+          "dark": "./images/kashmiri/kscss_logo.png"
+        }
       },
       {
         "id": "nehtml",
-        "aliases": ["Nepali HTML", "nehtml"],
-        "extensions": [".nhtml"],
+        "aliases": [
+          "Nepali HTML",
+          "nehtml"
+        ],
+        "extensions": [
+          ".nhtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/nepali/nehtml_logo.png", "dark": "./images/nepali/nehtml_logo.png" }
+        "icon": {
+          "light": "./images/nepali/nehtml_logo.png",
+          "dark": "./images/nepali/nehtml_logo.png"
+        }
       },
       {
         "id": "necss",
-        "aliases": ["Nepali CSS", "necss"],
-        "extensions": [".ncss"],
+        "aliases": [
+          "Nepali CSS",
+          "necss"
+        ],
+        "extensions": [
+          ".ncss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/nepali/necss_logo.png", "dark": "./images/nepali/necss_logo.png" }
+        "icon": {
+          "light": "./images/nepali/necss_logo.png",
+          "dark": "./images/nepali/necss_logo.png"
+        }
       },
       {
         "id": "kokhtml",
-        "aliases": ["Konkani HTML", "kokhtml"],
-        "extensions": [".kohtml"],
+        "aliases": [
+          "Konkani HTML",
+          "kokhtml"
+        ],
+        "extensions": [
+          ".kohtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/konkani/kokhtml_logo.png", "dark": "./images/konkani/kokhtml_logo.png" }
+        "icon": {
+          "light": "./images/konkani/kokhtml_logo.png",
+          "dark": "./images/konkani/kokhtml_logo.png"
+        }
       },
       {
         "id": "kokcss",
-        "aliases": ["Konkani CSS", "kokcss"],
-        "extensions": [".kocss"],
+        "aliases": [
+          "Konkani CSS",
+          "kokcss"
+        ],
+        "extensions": [
+          ".kocss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/konkani/kokcss_logo.png", "dark": "./images/konkani/kokcss_logo.png" }
+        "icon": {
+          "light": "./images/konkani/kokcss_logo.png",
+          "dark": "./images/konkani/kokcss_logo.png"
+        }
       },
       {
         "id": "sdhtml",
-        "aliases": ["Sindhi HTML", "sdhtml"],
-        "extensions": [".sdhtml"],
+        "aliases": [
+          "Sindhi HTML",
+          "sdhtml"
+        ],
+        "extensions": [
+          ".sdhtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/sindhi/sdhtml_logo.png", "dark": "./images/sindhi/sdhtml_logo.png" }
+        "icon": {
+          "light": "./images/sindhi/sdhtml_logo.png",
+          "dark": "./images/sindhi/sdhtml_logo.png"
+        }
       },
       {
         "id": "sdcss",
-        "aliases": ["Sindhi CSS", "sdcss"],
-        "extensions": [".sdcss"],
+        "aliases": [
+          "Sindhi CSS",
+          "sdcss"
+        ],
+        "extensions": [
+          ".sdcss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/sindhi/sdcss_logo.png", "dark": "./images/sindhi/sdcss_logo.png" }
+        "icon": {
+          "light": "./images/sindhi/sdcss_logo.png",
+          "dark": "./images/sindhi/sdcss_logo.png"
+        }
       },
       {
         "id": "doihtml",
-        "aliases": ["Dogri HTML", "doihtml"],
-        "extensions": [".dhtml"],
+        "aliases": [
+          "Dogri HTML",
+          "doihtml"
+        ],
+        "extensions": [
+          ".dhtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/dogri/doihtml_logo.png", "dark": "./images/dogri/doihtml_logo.png" }
+        "icon": {
+          "light": "./images/dogri/doihtml_logo.png",
+          "dark": "./images/dogri/doihtml_logo.png"
+        }
       },
       {
         "id": "doicss",
-        "aliases": ["Dogri CSS", "doicss"],
-        "extensions": [".dcss"],
+        "aliases": [
+          "Dogri CSS",
+          "doicss"
+        ],
+        "extensions": [
+          ".dcss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/dogri/doicss_logo.png", "dark": "./images/dogri/doicss_logo.png" }
+        "icon": {
+          "light": "./images/dogri/doicss_logo.png",
+          "dark": "./images/dogri/doicss_logo.png"
+        }
       },
       {
         "id": "mnihtml",
-        "aliases": ["Manipuri HTML", "mnihtml"],
-        "extensions": [".mnihtml"],
+        "aliases": [
+          "Manipuri HTML",
+          "mnihtml"
+        ],
+        "extensions": [
+          ".mnihtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/manipuri/mnihtml_logo.png", "dark": "./images/manipuri/mnihtml_logo.png" }
+        "icon": {
+          "light": "./images/manipuri/mnihtml_logo.png",
+          "dark": "./images/manipuri/mnihtml_logo.png"
+        }
       },
       {
         "id": "mnicss",
-        "aliases": ["Manipuri CSS", "mnicss"],
-        "extensions": [".mnicss"],
+        "aliases": [
+          "Manipuri CSS",
+          "mnicss"
+        ],
+        "extensions": [
+          ".mnicss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/manipuri/mnicss_logo.png", "dark": "./images/manipuri/mnicss_logo.png" }
+        "icon": {
+          "light": "./images/manipuri/mnicss_logo.png",
+          "dark": "./images/manipuri/mnicss_logo.png"
+        }
       },
       {
         "id": "brxhtml",
-        "aliases": ["Bodo HTML", "brxhtml"],
-        "extensions": [".brxhtml"],
+        "aliases": [
+          "Bodo HTML",
+          "brxhtml"
+        ],
+        "extensions": [
+          ".brxhtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/bodo/brxhtml_logo.png", "dark": "./images/bodo/brxhtml_logo.png" }
+        "icon": {
+          "light": "./images/bodo/brxhtml_logo.png",
+          "dark": "./images/bodo/brxhtml_logo.png"
+        }
       },
       {
         "id": "brxcss",
-        "aliases": ["Bodo CSS", "brxcss"],
-        "extensions": [".brxcss"],
+        "aliases": [
+          "Bodo CSS",
+          "brxcss"
+        ],
+        "extensions": [
+          ".brxcss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/bodo/brxcss_logo.png", "dark": "./images/bodo/brxcss_logo.png" }
+        "icon": {
+          "light": "./images/bodo/brxcss_logo.png",
+          "dark": "./images/bodo/brxcss_logo.png"
+        }
       },
       {
         "id": "sahtml",
-        "aliases": ["Sanskrit HTML", "sahtml"],
-        "extensions": [".sahtml"],
+        "aliases": [
+          "Sanskrit HTML",
+          "sahtml"
+        ],
+        "extensions": [
+          ".sahtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/sanskrit/sahtml_logo.png", "dark": "./images/sanskrit/sahtml_logo.png" }
+        "icon": {
+          "light": "./images/sanskrit/sahtml_logo.png",
+          "dark": "./images/sanskrit/sahtml_logo.png"
+        }
       },
       {
         "id": "sacss",
-        "aliases": ["Sanskrit CSS", "sacss"],
-        "extensions": [".sacss"],
+        "aliases": [
+          "Sanskrit CSS",
+          "sacss"
+        ],
+        "extensions": [
+          ".sacss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/sanskrit/sacss_logo.png", "dark": "./images/sanskrit/sacss_logo.png" }
+        "icon": {
+          "light": "./images/sanskrit/sacss_logo.png",
+          "dark": "./images/sanskrit/sacss_logo.png"
+        }
       },
       {
         "id": "souhtml",
-        "aliases": ["Sourashtra HTML", "souhtml"],
-        "extensions": [".souhtml"],
+        "aliases": [
+          "Sourashtra HTML",
+          "souhtml"
+        ],
+        "extensions": [
+          ".souhtml"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/sourashtra/souhtml_logo.png", "dark": "./images/sourashtra/souhtml_logo.png" }
+        "icon": {
+          "light": "./images/sourashtra/souhtml_logo.png",
+          "dark": "./images/sourashtra/souhtml_logo.png"
+        }
       },
       {
         "id": "soucss",
-        "aliases": ["Sourashtra CSS", "soucss"],
-        "extensions": [".soucss"],
+        "aliases": [
+          "Sourashtra CSS",
+          "soucss"
+        ],
+        "extensions": [
+          ".soucss"
+        ],
         "configuration": "./language-configuration.json",
-        "icon": { "light": "./images/sourashtra/soucss_logo.png", "dark": "./images/sourashtra/soucss_logo.png" }
+        "icon": {
+          "light": "./images/sourashtra/soucss_logo.png",
+          "dark": "./images/sourashtra/soucss_logo.png"
+        }
       }
     ],
     "grammars": [
-      { "language": "thtml", "scopeName": "source.thtml", "path": "./syntaxes/thtml.tmLanguage.json" },
-      { "language": "tcss", "scopeName": "source.tcss", "path": "./syntaxes/tcss.tmLanguage.json" },
-      { "language": "hhtml", "scopeName": "source.hhtml", "path": "./syntaxes/hhtml.tmLanguage.json" },
-      { "language": "hcss", "scopeName": "source.hcss", "path": "./syntaxes/hcss.tmLanguage.json" },
-      { "language": "bnhtml", "scopeName": "source.bnhtml", "path": "./syntaxes/bnhtml.tmLanguage.json" },
-      { "language": "bncss", "scopeName": "source.bncss", "path": "./syntaxes/bncss.tmLanguage.json" },
-      { "language": "tehtml", "scopeName": "source.tehtml", "path": "./syntaxes/tehtml.tmLanguage.json" },
-      { "language": "tecss", "scopeName": "source.tecss", "path": "./syntaxes/tecss.tmLanguage.json" },
-      { "language": "mrhtml", "scopeName": "source.mrhtml", "path": "./syntaxes/mrhtml.tmLanguage.json" },
-      { "language": "mrcss", "scopeName": "source.mrcss", "path": "./syntaxes/mrcss.tmLanguage.json" },
-      { "language": "urhtml", "scopeName": "source.urhtml", "path": "./syntaxes/urhtml.tmLanguage.json" },
-      { "language": "urcss", "scopeName": "source.urcss", "path": "./syntaxes/urcss.tmLanguage.json" },
-      { "language": "guhtml", "scopeName": "source.guhtml", "path": "./syntaxes/guhtml.tmLanguage.json" },
-      { "language": "gucss", "scopeName": "source.gucss", "path": "./syntaxes/gucss.tmLanguage.json" },
-      { "language": "knhtml", "scopeName": "source.knhtml", "path": "./syntaxes/knhtml.tmLanguage.json" },
-      { "language": "kncss", "scopeName": "source.kncss", "path": "./syntaxes/kncss.tmLanguage.json" },
-      { "language": "orhtml", "scopeName": "source.orhtml", "path": "./syntaxes/orhtml.tmLanguage.json" },
-      { "language": "orcss", "scopeName": "source.orcss", "path": "./syntaxes/orcss.tmLanguage.json" },
-      { "language": "mlhtml", "scopeName": "source.mlhtml", "path": "./syntaxes/mlhtml.tmLanguage.json" },
-      { "language": "mlcss", "scopeName": "source.mlcss", "path": "./syntaxes/mlcss.tmLanguage.json" },
-      { "language": "pahtml", "scopeName": "source.pahtml", "path": "./syntaxes/pahtml.tmLanguage.json" },
-      { "language": "pacss", "scopeName": "source.pacss", "path": "./syntaxes/pacss.tmLanguage.json" },
-      { "language": "ashtml", "scopeName": "source.ashtml", "path": "./syntaxes/ashtml.tmLanguage.json" },
-      { "language": "ascss", "scopeName": "source.ascss", "path": "./syntaxes/ascss.tmLanguage.json" },
-      { "language": "maihtml", "scopeName": "source.maihtml", "path": "./syntaxes/maihtml.tmLanguage.json" },
-      { "language": "maicss", "scopeName": "source.maicss", "path": "./syntaxes/maicss.tmLanguage.json" },
-      { "language": "sathtml", "scopeName": "source.sathtml", "path": "./syntaxes/sathtml.tmLanguage.json" },
-      { "language": "satcss", "scopeName": "source.satcss", "path": "./syntaxes/satcss.tmLanguage.json" },
-      { "language": "kshtml", "scopeName": "source.kshtml", "path": "./syntaxes/kshtml.tmLanguage.json" },
-      { "language": "kscss", "scopeName": "source.kscss", "path": "./syntaxes/kscss.tmLanguage.json" },
-      { "language": "nehtml", "scopeName": "source.nehtml", "path": "./syntaxes/nehtml.tmLanguage.json" },
-      { "language": "necss", "scopeName": "source.necss", "path": "./syntaxes/necss.tmLanguage.json" },
-      { "language": "kokhtml", "scopeName": "source.kokhtml", "path": "./syntaxes/kokhtml.tmLanguage.json" },
-      { "language": "kokcss", "scopeName": "source.kokcss", "path": "./syntaxes/kokcss.tmLanguage.json" },
-      { "language": "sdhtml", "scopeName": "source.sdhtml", "path": "./syntaxes/sdhtml.tmLanguage.json" },
-      { "language": "sdcss", "scopeName": "source.sdcss", "path": "./syntaxes/sdcss.tmLanguage.json" },
-      { "language": "doihtml", "scopeName": "source.doihtml", "path": "./syntaxes/doihtml.tmLanguage.json" },
-      { "language": "doicss", "scopeName": "source.doicss", "path": "./syntaxes/doicss.tmLanguage.json" },
-      { "language": "mnihtml", "scopeName": "source.mnihtml", "path": "./syntaxes/mnihtml.tmLanguage.json" },
-      { "language": "mnicss", "scopeName": "source.mnicss", "path": "./syntaxes/mnicss.tmLanguage.json" },
-      { "language": "brxhtml", "scopeName": "source.brxhtml", "path": "./syntaxes/brxhtml.tmLanguage.json" },
-      { "language": "brxcss", "scopeName": "source.brxcss", "path": "./syntaxes/brxcss.tmLanguage.json" },
-      { "language": "sahtml", "scopeName": "source.sahtml", "path": "./syntaxes/sahtml.tmLanguage.json" },
-      { "language": "sacss", "scopeName": "source.sacss", "path": "./syntaxes/sacss.tmLanguage.json" },
-      { "language": "souhtml", "scopeName": "source.souhtml", "path": "./syntaxes/souhtml.tmLanguage.json" },
-      { "language": "soucss", "scopeName": "source.soucss", "path": "./syntaxes/soucss.tmLanguage.json" }
+      {
+        "language": "thtml",
+        "scopeName": "source.thtml",
+        "path": "./syntaxes/thtml.tmLanguage.json"
+      },
+      {
+        "language": "tcss",
+        "scopeName": "source.tcss",
+        "path": "./syntaxes/tcss.tmLanguage.json"
+      },
+      {
+        "language": "hhtml",
+        "scopeName": "source.hhtml",
+        "path": "./syntaxes/hhtml.tmLanguage.json"
+      },
+      {
+        "language": "hcss",
+        "scopeName": "source.hcss",
+        "path": "./syntaxes/hcss.tmLanguage.json"
+      },
+      {
+        "language": "bnhtml",
+        "scopeName": "source.bnhtml",
+        "path": "./syntaxes/bnhtml.tmLanguage.json"
+      },
+      {
+        "language": "bncss",
+        "scopeName": "source.bncss",
+        "path": "./syntaxes/bncss.tmLanguage.json"
+      },
+      {
+        "language": "tehtml",
+        "scopeName": "source.tehtml",
+        "path": "./syntaxes/tehtml.tmLanguage.json"
+      },
+      {
+        "language": "tecss",
+        "scopeName": "source.tecss",
+        "path": "./syntaxes/tecss.tmLanguage.json"
+      },
+      {
+        "language": "mrhtml",
+        "scopeName": "source.mrhtml",
+        "path": "./syntaxes/mrhtml.tmLanguage.json"
+      },
+      {
+        "language": "mrcss",
+        "scopeName": "source.mrcss",
+        "path": "./syntaxes/mrcss.tmLanguage.json"
+      },
+      {
+        "language": "urhtml",
+        "scopeName": "source.urhtml",
+        "path": "./syntaxes/urhtml.tmLanguage.json"
+      },
+      {
+        "language": "urcss",
+        "scopeName": "source.urcss",
+        "path": "./syntaxes/urcss.tmLanguage.json"
+      },
+      {
+        "language": "guhtml",
+        "scopeName": "source.guhtml",
+        "path": "./syntaxes/guhtml.tmLanguage.json"
+      },
+      {
+        "language": "gucss",
+        "scopeName": "source.gucss",
+        "path": "./syntaxes/gucss.tmLanguage.json"
+      },
+      {
+        "language": "knhtml",
+        "scopeName": "source.knhtml",
+        "path": "./syntaxes/knhtml.tmLanguage.json"
+      },
+      {
+        "language": "kncss",
+        "scopeName": "source.kncss",
+        "path": "./syntaxes/kncss.tmLanguage.json"
+      },
+      {
+        "language": "orhtml",
+        "scopeName": "source.orhtml",
+        "path": "./syntaxes/orhtml.tmLanguage.json"
+      },
+      {
+        "language": "orcss",
+        "scopeName": "source.orcss",
+        "path": "./syntaxes/orcss.tmLanguage.json"
+      },
+      {
+        "language": "mlhtml",
+        "scopeName": "source.mlhtml",
+        "path": "./syntaxes/mlhtml.tmLanguage.json"
+      },
+      {
+        "language": "mlcss",
+        "scopeName": "source.mlcss",
+        "path": "./syntaxes/mlcss.tmLanguage.json"
+      },
+      {
+        "language": "pahtml",
+        "scopeName": "source.pahtml",
+        "path": "./syntaxes/pahtml.tmLanguage.json"
+      },
+      {
+        "language": "pacss",
+        "scopeName": "source.pacss",
+        "path": "./syntaxes/pacss.tmLanguage.json"
+      },
+      {
+        "language": "ashtml",
+        "scopeName": "source.ashtml",
+        "path": "./syntaxes/ashtml.tmLanguage.json"
+      },
+      {
+        "language": "ascss",
+        "scopeName": "source.ascss",
+        "path": "./syntaxes/ascss.tmLanguage.json"
+      },
+      {
+        "language": "maihtml",
+        "scopeName": "source.maihtml",
+        "path": "./syntaxes/maihtml.tmLanguage.json"
+      },
+      {
+        "language": "maicss",
+        "scopeName": "source.maicss",
+        "path": "./syntaxes/maicss.tmLanguage.json"
+      },
+      {
+        "language": "sathtml",
+        "scopeName": "source.sathtml",
+        "path": "./syntaxes/sathtml.tmLanguage.json"
+      },
+      {
+        "language": "satcss",
+        "scopeName": "source.satcss",
+        "path": "./syntaxes/satcss.tmLanguage.json"
+      },
+      {
+        "language": "kshtml",
+        "scopeName": "source.kshtml",
+        "path": "./syntaxes/kshtml.tmLanguage.json"
+      },
+      {
+        "language": "kscss",
+        "scopeName": "source.kscss",
+        "path": "./syntaxes/kscss.tmLanguage.json"
+      },
+      {
+        "language": "nehtml",
+        "scopeName": "source.nehtml",
+        "path": "./syntaxes/nehtml.tmLanguage.json"
+      },
+      {
+        "language": "necss",
+        "scopeName": "source.necss",
+        "path": "./syntaxes/necss.tmLanguage.json"
+      },
+      {
+        "language": "kokhtml",
+        "scopeName": "source.kokhtml",
+        "path": "./syntaxes/kokhtml.tmLanguage.json"
+      },
+      {
+        "language": "kokcss",
+        "scopeName": "source.kokcss",
+        "path": "./syntaxes/kokcss.tmLanguage.json"
+      },
+      {
+        "language": "sdhtml",
+        "scopeName": "source.sdhtml",
+        "path": "./syntaxes/sdhtml.tmLanguage.json"
+      },
+      {
+        "language": "sdcss",
+        "scopeName": "source.sdcss",
+        "path": "./syntaxes/sdcss.tmLanguage.json"
+      },
+      {
+        "language": "doihtml",
+        "scopeName": "source.doihtml",
+        "path": "./syntaxes/doihtml.tmLanguage.json"
+      },
+      {
+        "language": "doicss",
+        "scopeName": "source.doicss",
+        "path": "./syntaxes/doicss.tmLanguage.json"
+      },
+      {
+        "language": "mnihtml",
+        "scopeName": "source.mnihtml",
+        "path": "./syntaxes/mnihtml.tmLanguage.json"
+      },
+      {
+        "language": "mnicss",
+        "scopeName": "source.mnicss",
+        "path": "./syntaxes/mnicss.tmLanguage.json"
+      },
+      {
+        "language": "brxhtml",
+        "scopeName": "source.brxhtml",
+        "path": "./syntaxes/brxhtml.tmLanguage.json"
+      },
+      {
+        "language": "brxcss",
+        "scopeName": "source.brxcss",
+        "path": "./syntaxes/brxcss.tmLanguage.json"
+      },
+      {
+        "language": "sahtml",
+        "scopeName": "source.sahtml",
+        "path": "./syntaxes/sahtml.tmLanguage.json"
+      },
+      {
+        "language": "sacss",
+        "scopeName": "source.sacss",
+        "path": "./syntaxes/sacss.tmLanguage.json"
+      },
+      {
+        "language": "souhtml",
+        "scopeName": "source.souhtml",
+        "path": "./syntaxes/souhtml.tmLanguage.json"
+      },
+      {
+        "language": "soucss",
+        "scopeName": "source.soucss",
+        "path": "./syntaxes/soucss.tmLanguage.json"
+      }
     ],
     "commands": [
       {
@@ -450,29 +1001,98 @@
       ]
     },
     "snippets": [
-      { "language": "thtml", "path": "./snippets/thtml.json" },
-      { "language": "hhtml", "path": "./snippets/hhtml.json" },
-      { "language": "bnhtml", "path": "./snippets/bnhtml.json" },
-      { "language": "tehtml", "path": "./snippets/tehtml.json" },
-      { "language": "mrhtml", "path": "./snippets/mrhtml.json" },
-      { "language": "urhtml", "path": "./snippets/urhtml.json" },
-      { "language": "guhtml", "path": "./snippets/guhtml.json" },
-      { "language": "knhtml", "path": "./snippets/knhtml.json" },
-      { "language": "orhtml", "path": "./snippets/orhtml.json" },
-      { "language": "mlhtml", "path": "./snippets/mlhtml.json" },
-      { "language": "pahtml", "path": "./snippets/pahtml.json" },
-      { "language": "ashtml", "path": "./snippets/ashtml.json" },
-      { "language": "maihtml", "path": "./snippets/maihtml.json" },
-      { "language": "sathtml", "path": "./snippets/sathtml.json" },
-      { "language": "kshtml", "path": "./snippets/kshtml.json" },
-      { "language": "nehtml", "path": "./snippets/nehtml.json" },
-      { "language": "kokhtml", "path": "./snippets/kokhtml.json" },
-      { "language": "sdhtml", "path": "./snippets/sdhtml.json" },
-      { "language": "doihtml", "path": "./snippets/doihtml.json" },
-      { "language": "mnihtml", "path": "./snippets/mnihtml.json" },
-      { "language": "brxhtml", "path": "./snippets/brxhtml.json" },
-      { "language": "sahtml", "path": "./snippets/sahtml.json" },
-      { "language": "souhtml", "path": "./snippets/souhtml.json" }
+      {
+        "language": "thtml",
+        "path": "./snippets/thtml.json"
+      },
+      {
+        "language": "hhtml",
+        "path": "./snippets/hhtml.json"
+      },
+      {
+        "language": "bnhtml",
+        "path": "./snippets/bnhtml.json"
+      },
+      {
+        "language": "tehtml",
+        "path": "./snippets/tehtml.json"
+      },
+      {
+        "language": "mrhtml",
+        "path": "./snippets/mrhtml.json"
+      },
+      {
+        "language": "urhtml",
+        "path": "./snippets/urhtml.json"
+      },
+      {
+        "language": "guhtml",
+        "path": "./snippets/guhtml.json"
+      },
+      {
+        "language": "knhtml",
+        "path": "./snippets/knhtml.json"
+      },
+      {
+        "language": "orhtml",
+        "path": "./snippets/orhtml.json"
+      },
+      {
+        "language": "mlhtml",
+        "path": "./snippets/mlhtml.json"
+      },
+      {
+        "language": "pahtml",
+        "path": "./snippets/pahtml.json"
+      },
+      {
+        "language": "ashtml",
+        "path": "./snippets/ashtml.json"
+      },
+      {
+        "language": "maihtml",
+        "path": "./snippets/maihtml.json"
+      },
+      {
+        "language": "sathtml",
+        "path": "./snippets/sathtml.json"
+      },
+      {
+        "language": "kshtml",
+        "path": "./snippets/kshtml.json"
+      },
+      {
+        "language": "nehtml",
+        "path": "./snippets/nehtml.json"
+      },
+      {
+        "language": "kokhtml",
+        "path": "./snippets/kokhtml.json"
+      },
+      {
+        "language": "sdhtml",
+        "path": "./snippets/sdhtml.json"
+      },
+      {
+        "language": "doihtml",
+        "path": "./snippets/doihtml.json"
+      },
+      {
+        "language": "mnihtml",
+        "path": "./snippets/mnihtml.json"
+      },
+      {
+        "language": "brxhtml",
+        "path": "./snippets/brxhtml.json"
+      },
+      {
+        "language": "sahtml",
+        "path": "./snippets/sahtml.json"
+      },
+      {
+        "language": "souhtml",
+        "path": "./snippets/souhtml.json"
+      }
     ]
   },
   "scripts": {
